@@ -15,7 +15,7 @@ cask "clicky" do
     strategy :sparkle
   end
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "HeyClicky.app"
 

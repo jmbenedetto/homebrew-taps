@@ -15,7 +15,7 @@ cask "cua-driver" do
     regex(/"tag_name"\s*:\s*"cua-driver-rs-v?(\d+(?:\.\d+)+)"/i)
   end
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "cua-driver-rs-#{version}-darwin-universal/CuaDriver.app"
   binary "#{appdir}/CuaDriver.app/Contents/MacOS/cua-driver"

@@ -15,6 +15,8 @@ cask "vial" do
     strategy :github_latest
   end
 
+  depends_on :macos
+
   app "Vial.app"
 
   zap trash: [

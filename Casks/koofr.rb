@@ -13,6 +13,8 @@ cask "koofr" do
     skip "Vendor publishes only a mutable latest-download URL"
   end
 
+  depends_on :macos
+
   app "Koofr.app"
 
   zap trash: [

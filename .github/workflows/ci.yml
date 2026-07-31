@@ -14,8 +14,10 @@ jobs:
     runs-on: macos-15
     steps:
       - uses: actions/checkout@v4
-      - name: Register checkout as a tap
-        run: brew tap jmbenedetto/taps "$GITHUB_WORKSPACE"
+      - name: Register checkout as a trusted tap
+        run: |
+          brew tap jmbenedetto/taps "$GITHUB_WORKSPACE"
+          brew trust jmbenedetto/taps
       - name: Style
         run: brew style jmbenedetto/taps
       - name: Audit casks

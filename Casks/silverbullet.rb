@@ -14,7 +14,7 @@ cask "silverbullet" do
     regex(/SilverBullet[._-]v?(\d+(?:\.\d+)+)_universal\.dmg/i)
   end
 
-  depends_on macos: ">= :catalina"
+  depends_on macos: :catalina
 
   app "SilverBullet.app"
 

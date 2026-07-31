@@ -15,6 +15,8 @@ cask "blip-ai" do
     strategy :github_latest
   end
 
+  depends_on :macos
+
   app "Blip-AI.app"
 
   zap trash: [

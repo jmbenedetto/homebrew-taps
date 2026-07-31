@@ -14,6 +14,8 @@ cask "zerowork" do
     regex(/^version:\s*v?(\d+(?:\.\d+)+)$/i)
   end
 
+  depends_on :macos
+
   app "ZeroWork.app"
 
   zap trash: [
