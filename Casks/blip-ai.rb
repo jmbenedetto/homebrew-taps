@@ -4,8 +4,7 @@ cask "blip-ai" do
   version "0.5.6"
   sha256 "741991112d5f603468b5aee05c3d75bba4e776f31485efa18738d62b061c1503"
 
-  url "https://github.com/abnsl0014/blipai-releases/releases/download/v#{version}/Blip-AI-#{version}-universal.dmg",
-      verified: "github.com/abnsl0014/blipai-releases/"
+  url "https://github.com/abnsl0014/blipai-releases/releases/download/v#{version}/Blip-AI-#{version}-universal.dmg"
   name "Blip AI"
   desc "AI desktop assistant"
   homepage "https://github.com/abnsl0014/blipai-releases"
