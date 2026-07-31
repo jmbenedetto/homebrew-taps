@@ -1,0 +1,21 @@
+name: Restrict pull requests
+
+on:
+  pull_request_target:
+    types: [opened, reopened, ready_for_review]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  close-external:
+    if: github.actor != 'jmbenedetto'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close external pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+        run: |
+          gh pr close "$PR_URL" --comment "This is a personal tap and accepts pull requests only from @jmbenedetto."

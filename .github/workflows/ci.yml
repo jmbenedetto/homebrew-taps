@@ -1,0 +1,25 @@
+name: Homebrew audit
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Register checkout as a tap
+        run: brew tap jmbenedetto/taps "$GITHUB_WORKSPACE"
+      - name: Style
+        run: brew style jmbenedetto/taps
+      - name: Audit casks
+        run: |
+          for cask in blip-ai clicky cua-driver dart koofr silverbullet vial zerowork; do
+            brew audit --cask --online "jmbenedetto/taps/$cask"
+          done
