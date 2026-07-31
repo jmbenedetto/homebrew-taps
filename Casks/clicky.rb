@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 cask "clicky" do
-  version "1.0.44"
+  version "1.0.44,53"
   sha256 "4b9edd5b3a8d4c596fb63e7df1212a8ed387c6571b8f5ce67fbf869275357550"
 
-  url "https://github.com/farzaa/clicky-releases/releases/download/v#{version}/HeyClicky.dmg",
+  url "https://github.com/farzaa/clicky-releases/releases/download/v#{version.csv.first}/HeyClicky.dmg",
       verified: "github.com/farzaa/clicky-releases/"
   name "HeyClicky"
   desc "AI desktop assistant with computer-use capabilities"

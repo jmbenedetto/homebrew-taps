@@ -8,14 +8,14 @@ cask "blip-ai" do
       verified: "github.com/abnsl0014/blipai-releases/"
   name "Blip AI"
   desc "AI desktop assistant"
-  homepage "https://www.blipai.app/"
+  homepage "https://github.com/abnsl0014/blipai-releases"
 
   livecheck do
-    url "https://api.github.com/repos/abnsl0014/blipai-releases/releases/latest"
+    url "https://github.com/abnsl0014/blipai-releases/releases/latest"
     strategy :github_latest
   end
 
-  depends_on :macos
+  depends_on macos: :big_sur
 
   app "Blip-AI.app"
 

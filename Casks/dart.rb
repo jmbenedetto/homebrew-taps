@@ -11,11 +11,11 @@ cask "dart" do
   homepage "https://www.dartai.com/"
 
   livecheck do
-    url "https://api.github.com/repos/its-dart/dart_desktop_builds/releases/latest"
+    url "https://github.com/its-dart/dart_desktop_builds/releases/latest"
     strategy :github_latest
   end
 
-  depends_on :macos
+  depends_on macos: :big_sur
 
   app "Dart.app"
 
