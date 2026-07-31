@@ -13,7 +13,7 @@ jobs:
   audit:
     runs-on: macos-15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Register checkout as a trusted tap
         run: |
           brew tap jmbenedetto/taps "$GITHUB_WORKSPACE"
