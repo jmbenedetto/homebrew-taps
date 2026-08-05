@@ -22,6 +22,6 @@ jobs:
         run: brew style jmbenedetto/taps
       - name: Audit casks
         run: |
-          for cask in blip-ai clicky cua-driver dart koofr silverbullet vial zerowork; do
+          for cask in blip-ai clicky cua-driver dart happier koofr silverbullet vial zerowork; do
             brew audit --cask "jmbenedetto/taps/$cask"
           done

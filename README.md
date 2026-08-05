@@ -22,6 +22,7 @@ cask "jmbenedetto/taps/vial"
 - `clicky`
 - `cua-driver`
 - `dart`
+- `happier`
 - `koofr`
 - `silverbullet`
 - `vial`
