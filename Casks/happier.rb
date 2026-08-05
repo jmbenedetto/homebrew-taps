@@ -20,6 +20,8 @@ cask "happier" do
     end
   end
 
+  depends_on :macos
+
   app "Happier.app"
 
   zap trash: [
