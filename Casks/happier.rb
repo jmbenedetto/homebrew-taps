@@ -20,8 +20,6 @@ cask "happier" do
     end
   end
 
-  depends_on macos: :high_sierra
-
   app "Happier.app"
 
   zap trash: [
