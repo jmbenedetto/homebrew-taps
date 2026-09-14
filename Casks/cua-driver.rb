@@ -4,8 +4,7 @@ cask "cua-driver" do
   version "0.14.1"
   sha256 "1eb81c84a2a455d2268ecf6ff12fc90063a8804c6db74ca9de93cd64a296939e"
 
-  url "https://github.com/trycua/cua/releases/download/cua-driver-rs-v#{version}/cua-driver-rs-#{version}-darwin-universal.tar.gz",
-      verified: "github.com/trycua/cua/"
+  url "https://github.com/trycua/cua/releases/download/cua-driver-rs-v#{version}/cua-driver-rs-#{version}-darwin-universal.tar.gz"
   name "CuaDriver"
   desc "Computer-use driver for desktop automation"
   homepage "https://cua.ai/docs/how-to-guides/driver/install"

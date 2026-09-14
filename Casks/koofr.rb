@@ -4,8 +4,7 @@ cask "koofr" do
   version :latest
   sha256 :no_check
 
-  url "https://app.koofr.net/dl/apps/osx",
-      verified: "app.koofr.net/"
+  url "https://app.koofr.net/dl/apps/osx"
   name "Koofr"
   desc "Desktop sync client for Koofr cloud storage"
   homepage "https://koofr.eu/"

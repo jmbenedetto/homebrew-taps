@@ -19,7 +19,6 @@ cask "jmbenedetto/taps/vial"
 ## Casks
 
 - `blip-ai`
-- `clicky`
 - `cua-driver`
 - `dart`
 - `happier`
