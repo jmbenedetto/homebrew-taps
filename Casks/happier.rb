@@ -7,8 +7,7 @@ cask "happier" do
   sha256 arm:   "109a9ba53b67ca514405cb0dbb9c0d9a63c77e7c193ff0f521128b772e72a765",
          intel: "53060661bb5348569c3b375cfc5caeda829919b942c4897aae0172ce8c993965"
 
-  url "https://github.com/happier-dev/happier/releases/download/ui-desktop-v#{version}/happier-ui-desktop-darwin-#{arch}-v#{version}.dmg",
-      verified: "github.com/happier-dev/happier/"
+  url "https://github.com/happier-dev/happier/releases/download/ui-desktop-v#{version}/happier-ui-desktop-darwin-#{arch}-v#{version}.dmg"
   name "Happier"
   desc "Cross-device companion for AI coding agents"
   homepage "https://happier.dev/"
